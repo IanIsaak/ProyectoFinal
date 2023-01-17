@@ -96,7 +96,7 @@
             this.Controls.Add(this.BoAlgorimosBusqueda);
             this.Controls.Add(this.BoAlgoritmosOrdenacion);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }
