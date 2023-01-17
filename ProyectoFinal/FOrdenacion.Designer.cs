@@ -56,6 +56,7 @@
             this.BoBurbujaBandera.TabIndex = 1;
             this.BoBurbujaBandera.Text = "Ordenacion Burbuja Bandera";
             this.BoBurbujaBandera.UseVisualStyleBackColor = true;
+            this.BoBurbujaBandera.Click += new System.EventHandler(this.BoBurbujaBandera_Click);
             // 
             // BoOrdenacionSeleccion
             // 
@@ -65,6 +66,7 @@
             this.BoOrdenacionSeleccion.TabIndex = 2;
             this.BoOrdenacionSeleccion.Text = "Ordenacion Seleccion";
             this.BoOrdenacionSeleccion.UseVisualStyleBackColor = true;
+            this.BoOrdenacionSeleccion.Click += new System.EventHandler(this.BoOrdenacionSeleccion_Click);
             // 
             // BoOrdenacionInsercion
             // 
@@ -74,6 +76,7 @@
             this.BoOrdenacionInsercion.TabIndex = 3;
             this.BoOrdenacionInsercion.Text = "Ordenacion Insercion";
             this.BoOrdenacionInsercion.UseVisualStyleBackColor = true;
+            this.BoOrdenacionInsercion.Click += new System.EventHandler(this.BoOrdenacionInsercion_Click);
             // 
             // BoOrdenacionShell
             // 
@@ -83,6 +86,7 @@
             this.BoOrdenacionShell.TabIndex = 4;
             this.BoOrdenacionShell.Text = "Ordenacion Shell";
             this.BoOrdenacionShell.UseVisualStyleBackColor = true;
+            this.BoOrdenacionShell.Click += new System.EventHandler(this.BoOrdenacionShell_Click);
             // 
             // BoOrdenacionMerge
             // 
@@ -101,6 +105,7 @@
             this.BoOrdenacionRadix.TabIndex = 6;
             this.BoOrdenacionRadix.Text = "Ordenacion Radix";
             this.BoOrdenacionRadix.UseVisualStyleBackColor = true;
+            this.BoOrdenacionRadix.Click += new System.EventHandler(this.BoOrdenacionRadix_Click);
             // 
             // BoOrdenacionQuick
             // 
@@ -110,6 +115,7 @@
             this.BoOrdenacionQuick.TabIndex = 7;
             this.BoOrdenacionQuick.Text = "Ordenacion Quick";
             this.BoOrdenacionQuick.UseVisualStyleBackColor = true;
+            this.BoOrdenacionQuick.Click += new System.EventHandler(this.BoOrdenacionQuick_Click);
             // 
             // FOrdenacion
             // 
