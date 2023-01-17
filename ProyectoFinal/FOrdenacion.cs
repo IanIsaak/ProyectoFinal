@@ -19,7 +19,7 @@ namespace ProyectoFinal
 
         private void BoBurbuja_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("Hola Mundo");
         }
     }
 }
