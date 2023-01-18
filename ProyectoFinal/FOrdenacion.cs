@@ -58,5 +58,11 @@ namespace ProyectoFinal
             FRadix Obj7 = new FRadix(); 
             Obj7.Show();
         }
+
+        private void BoOrdenacionMerge_Click(object sender, EventArgs e)
+        {
+            FMerge Obj8 = new FMerge();
+            Obj8.Show();
+        }
     }
 }

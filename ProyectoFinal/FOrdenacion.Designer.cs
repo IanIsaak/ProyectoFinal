@@ -96,6 +96,7 @@
             this.BoOrdenacionMerge.TabIndex = 5;
             this.BoOrdenacionMerge.Text = "Ordenacion Merge";
             this.BoOrdenacionMerge.UseVisualStyleBackColor = true;
+            this.BoOrdenacionMerge.Click += new System.EventHandler(this.BoOrdenacionMerge_Click);
             // 
             // BoOrdenacionRadix
             // 
