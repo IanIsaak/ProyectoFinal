@@ -22,5 +22,11 @@ namespace ProyectoFinal
             frmGrises Obj1 = new frmGrises();
             Obj1.Show();
         }
+
+        private void BoVisualizacion_Click(object sender, EventArgs e)
+        {
+            frmBin Obj = new frmBin();
+            Obj.Show();
+        }
     }
 }

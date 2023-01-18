@@ -40,6 +40,7 @@
             this.BoVisualizacion.TabIndex = 0;
             this.BoVisualizacion.Text = "Binarización";
             this.BoVisualizacion.UseVisualStyleBackColor = true;
+            this.BoVisualizacion.Click += new System.EventHandler(this.BoVisualizacion_Click);
             // 
             // BoEscalaGrises
             // 
