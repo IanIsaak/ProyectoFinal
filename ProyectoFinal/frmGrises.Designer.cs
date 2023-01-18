@@ -28,119 +28,247 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.gbxMain = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnGenerar = new System.Windows.Forms.Button();
+            this.dgdR = new System.Windows.Forms.DataGridView();
+            this.a = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgdG = new System.Windows.Forms.DataGridView();
+            this.d = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.f = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgdB = new System.Windows.Forms.DataGridView();
+            this.g = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.h = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.i = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgdGris = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gbxMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdGris)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbxMain
             // 
-            this.groupBox1.Location = new System.Drawing.Point(71, 28);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 125);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbxMain.Controls.Add(this.label1);
+            this.gbxMain.Controls.Add(this.btnGenerar);
+            this.gbxMain.Location = new System.Drawing.Point(208, 28);
+            this.gbxMain.Name = "gbxMain";
+            this.gbxMain.Size = new System.Drawing.Size(808, 125);
+            this.gbxMain.TabIndex = 0;
+            this.gbxMain.TabStop = false;
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(71, 200);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(217, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(414, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ingrese los valores a trabajar, o solo use los predeterminados";
             // 
-            // dataGridView2
+            // btnGenerar
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(403, 200);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView2.TabIndex = 2;
+            this.btnGenerar.Location = new System.Drawing.Point(351, 86);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(136, 33);
+            this.btnGenerar.TabIndex = 4;
+            this.btnGenerar.Text = "Generar";
+            this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
-            // dataGridView3
+            // dgdR
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(745, 200);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 29;
-            this.dataGridView3.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView3.TabIndex = 3;
+            this.dgdR.AllowUserToAddRows = false;
+            this.dgdR.AllowUserToDeleteRows = false;
+            this.dgdR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdR.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.a,
+            this.b,
+            this.c});
+            this.dgdR.Location = new System.Drawing.Point(85, 183);
+            this.dgdR.Name = "dgdR";
+            this.dgdR.RowHeadersWidth = 51;
+            this.dgdR.RowTemplate.Height = 29;
+            this.dgdR.Size = new System.Drawing.Size(348, 261);
+            this.dgdR.TabIndex = 1;
             // 
-            // button1
+            // a
             // 
-            this.button1.Location = new System.Drawing.Point(405, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.a.HeaderText = "a";
+            this.a.MinimumWidth = 6;
+            this.a.Name = "a";
+            this.a.Width = 80;
             // 
-            // dataGridView4
+            // b
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(647, 555);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 29;
-            this.dataGridView4.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView4.TabIndex = 5;
+            this.b.HeaderText = "b";
+            this.b.MinimumWidth = 6;
+            this.b.Name = "b";
+            this.b.Width = 80;
+            // 
+            // c
+            // 
+            this.c.HeaderText = "c";
+            this.c.MinimumWidth = 6;
+            this.c.Name = "c";
+            this.c.Width = 80;
+            // 
+            // dgdG
+            // 
+            this.dgdG.AllowUserToAddRows = false;
+            this.dgdG.AllowUserToDeleteRows = false;
+            this.dgdG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.d,
+            this.e,
+            this.f});
+            this.dgdG.Location = new System.Drawing.Point(467, 183);
+            this.dgdG.Name = "dgdG";
+            this.dgdG.RowHeadersWidth = 51;
+            this.dgdG.RowTemplate.Height = 29;
+            this.dgdG.Size = new System.Drawing.Size(348, 261);
+            this.dgdG.TabIndex = 2;
+            // 
+            // d
+            // 
+            this.d.HeaderText = "d";
+            this.d.MinimumWidth = 6;
+            this.d.Name = "d";
+            this.d.Width = 80;
+            // 
+            // e
+            // 
+            this.e.HeaderText = "e";
+            this.e.MinimumWidth = 6;
+            this.e.Name = "e";
+            this.e.Width = 80;
+            // 
+            // f
+            // 
+            this.f.HeaderText = "f";
+            this.f.MinimumWidth = 6;
+            this.f.Name = "f";
+            this.f.Width = 80;
+            // 
+            // dgdB
+            // 
+            this.dgdB.AllowUserToAddRows = false;
+            this.dgdB.AllowUserToDeleteRows = false;
+            this.dgdB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.g,
+            this.h,
+            this.i});
+            this.dgdB.Location = new System.Drawing.Point(847, 183);
+            this.dgdB.Name = "dgdB";
+            this.dgdB.RowHeadersWidth = 51;
+            this.dgdB.RowTemplate.Height = 29;
+            this.dgdB.Size = new System.Drawing.Size(348, 261);
+            this.dgdB.TabIndex = 3;
+            // 
+            // g
+            // 
+            this.g.HeaderText = "g";
+            this.g.MinimumWidth = 6;
+            this.g.Name = "g";
+            this.g.Width = 80;
+            // 
+            // h
+            // 
+            this.h.HeaderText = "h";
+            this.h.MinimumWidth = 6;
+            this.h.Name = "h";
+            this.h.Width = 80;
+            // 
+            // i
+            // 
+            this.i.HeaderText = "i";
+            this.i.MinimumWidth = 6;
+            this.i.Name = "i";
+            this.i.Width = 80;
+            // 
+            // dgdGris
+            // 
+            this.dgdGris.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdGris.Location = new System.Drawing.Point(259, 16);
+            this.dgdGris.Name = "dgdGris";
+            this.dgdGris.RowHeadersWidth = 51;
+            this.dgdGris.RowTemplate.Height = 29;
+            this.dgdGris.Size = new System.Drawing.Size(348, 261);
+            this.dgdGris.TabIndex = 5;
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(268, 529);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.dgdGris);
+            this.groupBox2.Location = new System.Drawing.Point(208, 472);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 125);
+            this.groupBox2.Size = new System.Drawing.Size(808, 283);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(104, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Matriz generada:";
             // 
             // frmGrises
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 780);
+            this.ClientSize = new System.Drawing.Size(1259, 780);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgdB);
+            this.Controls.Add(this.dgdG);
+            this.Controls.Add(this.dgdR);
+            this.Controls.Add(this.gbxMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmGrises";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Escala de grises";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.gbxMain.ResumeLayout(false);
+            this.gbxMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdGris)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
-        private DataGridView dataGridView3;
-        private Button button1;
-        private DataGridView dataGridView4;
+        private GroupBox gbxMain;
+        private DataGridView dgdR;
+        private DataGridView dgdG;
+        private DataGridView dgdB;
+        private Button btnGenerar;
+        private DataGridView dgdGris;
         private GroupBox groupBox2;
+        private Label label1;
+        private Label label2;
+        private DataGridViewTextBoxColumn a;
+        private DataGridViewTextBoxColumn b;
+        private DataGridViewTextBoxColumn c;
+        private DataGridViewTextBoxColumn d;
+        private DataGridViewTextBoxColumn e;
+        private DataGridViewTextBoxColumn f;
+        private DataGridViewTextBoxColumn g;
+        private DataGridViewTextBoxColumn h;
+        private DataGridViewTextBoxColumn i;
     }
 }
