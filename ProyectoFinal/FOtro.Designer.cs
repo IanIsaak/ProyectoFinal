@@ -39,6 +39,7 @@
             this.BoOtros.TabIndex = 0;
             this.BoOtros.Text = "Algoritmo Otros";
             this.BoOtros.UseVisualStyleBackColor = true;
+            this.BoOtros.Click += new System.EventHandler(this.BoOtros_Click);
             // 
             // FOtro
             // 

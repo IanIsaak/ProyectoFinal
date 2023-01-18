@@ -50,6 +50,7 @@
             this.BoBusquedaBinaria.TabIndex = 1;
             this.BoBusquedaBinaria.Text = "Busqueda Binaria";
             this.BoBusquedaBinaria.UseVisualStyleBackColor = true;
+            this.BoBusquedaBinaria.Click += new System.EventHandler(this.BoBusquedaBinaria_Click);
             // 
             // FBusqueda
             // 
