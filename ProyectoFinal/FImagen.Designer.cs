@@ -49,6 +49,7 @@
             this.BoEscalaGrises.TabIndex = 1;
             this.BoEscalaGrises.Text = "Escala de grises";
             this.BoEscalaGrises.UseVisualStyleBackColor = true;
+            this.BoEscalaGrises.Click += new System.EventHandler(this.BoEscalaGrises_Click);
             // 
             // FImagen
             // 

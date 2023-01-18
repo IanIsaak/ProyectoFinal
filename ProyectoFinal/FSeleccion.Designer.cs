@@ -107,8 +107,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtTamañoArreglo);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FSeleccion";
-            this.Text = "FSeleccion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ordenación por selección";
             this.ResumeLayout(false);
             this.PerformLayout();
 
