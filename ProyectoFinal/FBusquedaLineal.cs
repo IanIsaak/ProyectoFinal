@@ -16,24 +16,42 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             TxtArregloGen.Text = "9,1,5,7,1,-1,8,12,45,12";
-            TxtPosicion.Text = "8";
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private void btnBusqueda_Click(object sender, EventArgs e)
+        {
+
+            int[] Numeros = Arreglos();
+            Lineal(Numeros);
+
+            int Busqueda(int[] Arr, int llave)
             {
-                int Busqueda(int[] Arr, int llave)
+                for (int i = 0; i < Arr.Length; i++)
                 {
-                    for (int i = 0; i < Arr.Length; i++)
+                    if (Arr[i] == llave)
                     {
-                        if (Arr[i] == llave)
-                        {
-                            return i;
-                        }
+                        return i;
                     }
-                    return -1;
                 }
-                void Iniciar(string[] args)
+                return -1;
+            }
+
+            void Lineal(int[] Numeros)
+            {
+                int llave = Int16.Parse(TxtPosicion.Text);
+                int resultado = Busqueda(Numeros, llave);
+                if (resultado == -1)
                 {
+                    txtResultado.Text = ("El elemento no existe");
+                }
+                else
+                {
+                    txtResultado.Text = String.Join("El resultado es: ", resultado + 1);
+                }
+            }
+
+            int[] Arreglos()
+            {
                 int[] Numeros = new int[10];
                 Numeros[0] = 9;
                 Numeros[1] = 1;
@@ -45,19 +63,8 @@ namespace ProyectoFinal
                 Numeros[7] = 12;
                 Numeros[8] = 45;
                 Numeros[9] = 12;
-                Array.Sort(Numeros);
-                int llave = 8;
-                    int resultado = Busqueda(Numeros, llave);
-                    if (resultado == -1)
-                    {
-                        LblResultado.Text = "El elemento no existe";
-                    }
-                    else
-                    {
-                        LblResultado.Text = "El resultado es: " + resultado;
-                    }
-                }
+                return Numeros;
             }
-        
+        }
     }
 }
