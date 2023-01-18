@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class FBusqueda : Form
+    public partial class FBusquedaBinaria : Form
     {
-        public FBusqueda()
+        public FBusquedaBinaria()
         {
             InitializeComponent();
-        }
-
-        private void BoBusquedaLineal_Click(object sender, EventArgs e)
-        {
-            FBusquedaLineal Obj1 = new FBusquedaLineal();
-            Obj1.Show();
         }
     }
 }

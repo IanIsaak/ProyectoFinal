@@ -40,6 +40,7 @@
             this.BoBusquedaLineal.TabIndex = 0;
             this.BoBusquedaLineal.Text = "Busqueda Lineal";
             this.BoBusquedaLineal.UseVisualStyleBackColor = true;
+            this.BoBusquedaLineal.Click += new System.EventHandler(this.BoBusquedaLineal_Click);
             // 
             // BoBusquedaBinaria
             // 
