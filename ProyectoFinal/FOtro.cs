@@ -16,5 +16,11 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void BoOtros_Click(object sender, EventArgs e)
+        {
+            FSumaParesArray Obj1 = new FSumaParesArray();
+            Obj1.Show();
+        }
     }
 }

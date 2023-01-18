@@ -50,11 +50,11 @@ namespace ProyectoFinal
                     int resultado = Busqueda(Numeros, llave);
                     if (resultado == -1)
                     {
-                        LblResultado.Text = "El elemento no existe";
+                        TxtResultado.Text = "El elemento no existe";
                     }
                     else
                     {
-                        LblResultado.Text = "El resultado es: " + resultado;
+                        TxtResultado.Text = "El resultado es: " + resultado;
                     }
                 }
             }

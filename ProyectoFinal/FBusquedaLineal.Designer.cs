@@ -30,11 +30,10 @@
         {
             this.TxtPosicion = new System.Windows.Forms.TextBox();
             this.TxtArregloGen = new System.Windows.Forms.TextBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.LblResultado = new System.Windows.Forms.Label();
+            this.TxtResultado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TxtPosicion
@@ -50,15 +49,6 @@
             this.TxtArregloGen.Name = "TxtArregloGen";
             this.TxtArregloGen.Size = new System.Drawing.Size(230, 27);
             this.TxtArregloGen.TabIndex = 21;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(590, 102);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(178, 67);
-            this.BtnBuscar.TabIndex = 20;
-            this.BtnBuscar.Text = "Buscar!";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -87,24 +77,22 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "La posicion en la que se encuentra es:";
             // 
-            // LblResultado
+            // TxtResultado
             // 
-            this.LblResultado.AutoSize = true;
-            this.LblResultado.Location = new System.Drawing.Point(273, 125);
-            this.LblResultado.Name = "LblResultado";
-            this.LblResultado.Size = new System.Drawing.Size(0, 20);
-            this.LblResultado.TabIndex = 24;
+            this.TxtResultado.Location = new System.Drawing.Point(273, 122);
+            this.TxtResultado.Name = "TxtResultado";
+            this.TxtResultado.Size = new System.Drawing.Size(230, 27);
+            this.TxtResultado.TabIndex = 24;
             // 
             // FBusquedaLineal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 260);
-            this.Controls.Add(this.LblResultado);
+            this.ClientSize = new System.Drawing.Size(548, 260);
+            this.Controls.Add(this.TxtResultado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtPosicion);
             this.Controls.Add(this.TxtArregloGen);
-            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "FBusquedaLineal";
@@ -118,10 +106,9 @@
 
         private TextBox TxtPosicion;
         private TextBox TxtArregloGen;
-        private Button BtnBuscar;
         private Label label3;
         private Label label2;
         private Label label4;
-        private Label LblResultado;
+        private TextBox TxtResultado;
     }
 }
