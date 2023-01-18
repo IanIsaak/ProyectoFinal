@@ -16,5 +16,11 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void BoEscalaGrises_Click(object sender, EventArgs e)
+        {
+            frmGrises Obj1 = new frmGrises();
+            Obj1.Show();
+        }
     }
 }
