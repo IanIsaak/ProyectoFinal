@@ -95,7 +95,10 @@
             this.Controls.Add(this.BoOptimizacion);
             this.Controls.Add(this.BoAlgorimosBusqueda);
             this.Controls.Add(this.BoAlgoritmosOrdenacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.ResumeLayout(false);
 

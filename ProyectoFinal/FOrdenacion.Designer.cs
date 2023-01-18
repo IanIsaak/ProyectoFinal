@@ -130,8 +130,11 @@
             this.Controls.Add(this.BoOrdenacionSeleccion);
             this.Controls.Add(this.BoBurbujaBandera);
             this.Controls.Add(this.BoBurbuja);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FOrdenacion";
-            this.Text = "FOrdenacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Algoritmos de ordenación";
             this.ResumeLayout(false);
 
         }

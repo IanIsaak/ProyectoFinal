@@ -34,16 +34,16 @@
             // 
             // BoVisualizacion
             // 
-            this.BoVisualizacion.Location = new System.Drawing.Point(349, 96);
+            this.BoVisualizacion.Location = new System.Drawing.Point(346, 256);
             this.BoVisualizacion.Name = "BoVisualizacion";
             this.BoVisualizacion.Size = new System.Drawing.Size(114, 57);
             this.BoVisualizacion.TabIndex = 0;
-            this.BoVisualizacion.Text = "Visualizacion";
+            this.BoVisualizacion.Text = "Binarización";
             this.BoVisualizacion.UseVisualStyleBackColor = true;
             // 
             // BoEscalaGrises
             // 
-            this.BoEscalaGrises.Location = new System.Drawing.Point(349, 258);
+            this.BoEscalaGrises.Location = new System.Drawing.Point(346, 116);
             this.BoEscalaGrises.Name = "BoEscalaGrises";
             this.BoEscalaGrises.Size = new System.Drawing.Size(114, 57);
             this.BoEscalaGrises.TabIndex = 1;
@@ -57,8 +57,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BoEscalaGrises);
             this.Controls.Add(this.BoVisualizacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FImagen";
-            this.Text = "FImagen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Procesamiento de imagenes";
             this.ResumeLayout(false);
 
         }
